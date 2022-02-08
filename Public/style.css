@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url("nasa-Q1p7bh3SHj8-unsplash.jpg");
+  height: 100%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  background-image: url("nasa-Q1p7bh3SHj8-unsplash.jpg");
+  height: 100%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content {
+  position: center;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 600px;
+  background: #f2f2f2;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  text-align: justify;
+  color: #222;
+  padding: 40px;
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-weight: 900;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+.flap {
+  width: 100%;
+  height: 100%;
+}
+
+.flap::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background: white;
+  background-position: 100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.flap::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background: white;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.container:hover .flap::after {
+  transform: translatex(300px);
+}
+
+.container:hover .flap::before {
+  transform: translatex(-300px);
+}
+.content a {
+  color: black;
+  text-decoration: none;
+}
+.content ul {
+  float: right;
+  list-style: none;
+  padding-top: 1rem;
+}
+.content ul li {
+  float: left;
+}
+.content ul li a {
+  padding: 2rem;
+
+  display: block;
+}
+
+.content ul li a:hover,
+.active {
+  background: rgb(164, 159, 159);
+  line-height: 0.5rem;
+}
+.containerdeux {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  width: 800px;
+  background: #f2f2f2;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+.contentdeux h1 {
+  padding-top: 4rem;
+  font-style: initial;
+}
+.contentdeux h3 {
+  padding-top: 10rem;
+  padding-left: 8rem;
+}
+.contentdeux a {
+  color: black;
+  text-decoration: none;
+}
+.contentdeux ul {
+  float: right;
+  list-style: none;
+  padding-top: 10rem;
+}
+.contentdeux ul li {
+  float: left;
+}
+.contentdeux ul li a {
+  display: block;
+  padding: 1rem;
+}
+
+.contentdeux ul li a:hover,
+.active {
+  background: rgb(164, 159, 159);
+  line-height: 0.5rem;
+}
+.block {
+  color: black;
+  padding-top: 11rem;
+  padding-left: 21rem;
+  display: flex;
+}
+.block i {
+  letter-spacing: 1rem;
+  padding-right: 0.6rem;
+  font-size: 2rem;
+}
+
+.contenttrois h1 {
+  padding-top: 4rem;
+  font-style: initial;
+}
+.contenttrois h3 {
+  padding-top: 5rem;
+  padding-left: 1rem;
+}
+.contenttrois a {
+  color: black;
+  text-decoration: none;
+}
+.contenttrois ul {
+  float: right;
+  list-style: none;
+  padding-top: 5rem;
+  padding-right: 9rem;
+}
+.contenttrois ul li {
+  float: left;
+}
+.contenttrois ul li a {
+  display: block;
+  padding: 1rem;
+}
+
+.contenttrois ul li a:hover,
+.active {
+  background: rgb(164, 159, 159);
+  line-height: 0.5rem;
+}
+.blockdeux {
+  height: 100px;
+  width: 100px;
+  padding-left: 5rem;
+  padding-top: 6rem;
+  color: black;
+}
+.blockdeux {
+  color: black;
+  padding-top: 14rem;
+
+  display: flex;
+}
+.blockdeux i {
+  letter-spacing: 1rem;
+  padding-right: 0.6rem;
+  font-size: 2rem;
+}
